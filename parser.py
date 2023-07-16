@@ -4,7 +4,7 @@ import csv
 from models import Items
 
 
-class ParserWB:
+class ParserCD:
     def __init__(self, url):
         self.news = self.__get_news(url)
 
@@ -47,4 +47,4 @@ class ParserWB:
 
 
 if __name__ == '__main__':
-    ParserWB('https://www.coindesk.com/search?s=bitcoin').parse()
+    ParserCD('https://www.coindesk.com/search?s=bitcoin').parse()
